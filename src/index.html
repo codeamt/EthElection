@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>EthElection</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/startbootstrap-heroic-features.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body style="background: #111">
+
+    <div class="container" style="width: 70%;">
+
+    <header class="jumbotron my-4">
+        <h1 class="display-3">EthElection</h1>
+        <p class="lead">This is a sample election app powered by the Ethereum blockchain and the Metamask Browser extension. To test the app, follow the CTA below to install Metamask and create an Eth address for the Ropsten Test Network. For more detailed instructions on how to use/run the project, view source code on GitHub.</p>
+        <a href="https://metamask.io/" class="btn btn-primary btn-lg">Download Metamask</a><a href="https://metamask.io/" class="btn btn-primary btn-lg" style="margin-left: 2%; background: black; border-color: black;">View On GitHub</a>
+      </header>
+
+
+      <div class="row">
+        <div class="col-lg-12">
+          <!--<h1 class="text-center">Results Board</h1>-->
+          <!--<hr/>-->
+          <!--<br/>-->
+          <div id="loader">
+            <p class="text-center">Loading...</p>
+          </div>
+          <div id="content" style="display: none;">
+          <div class="row">
+            <div class="jumbotron my-4" style="display: inline-block; width: 69%; float: left; margin-left:1%">
+            <table class="table">
+              <thead>
+                <tr><h4 class="text-center">Results Board</h4></tr>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Candidate Name</th>
+                  <th scope="col">Votes</th>
+                </tr>
+              </thead>
+              <tbody id="candidatesResults">
+              </tbody>
+            </table>
+            </div>
+            <!--<hr/>-->
+            <div class="jumbotron my-4" style="display: inline-block; width: 26%; float:right; margin-right: 1%">
+            <form onSubmit="App.castVote(); return false;">
+              <div class="form-group">
+                <!--<label for="candidatesSelect">Choose Your Candidate:</label></br>-->
+                <h4>Choose Your Candidate:</h4>
+                <select class="form-control" id="candidatesSelect">
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary">Vote</button>
+              <hr />
+            </form>
+            </div>
+           </div>
+            <p id="accountAddress" class="text-center jumbotron my-4"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
