@@ -14,8 +14,8 @@ contract Election {
   uint public candidatesCount;
 
   constructor() public {
-    addCandidate("Hillary Clinton");
-    addCandidate("Bernie Sanders");
+    addCandidate("Hillary R. Clinton");
+    addCandidate("Donald J. Trump");
   }
 
 

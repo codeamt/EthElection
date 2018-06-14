@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>EthElection</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="./app/javascripts/bootstrap.min.js"></script>
+  <script src="./app/javascripts/web3.min.js"></script>
+  <script src="./app/javascripts/truffle-contract.js"></script>
+  <script src="./app/javascripts/app.js"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="background: #111">
+    <div class="container" style="margin-left: 10em">
+      <a class="navbar-brand" href="#">
+        EthElection
+      </a>
+    </div>
+  </nav>
+
+
+  <!-- Content -->
+  <main role="main" class="container" style="margin-top: 5%">
+
+
+    <header class="jumbotron my-4">
+        <h1 class="display-3">Secured Voting from Your Browser</h1>
+        <p class="lead">This is a sample election app powered by the Ethereum blockchain and the Metamask Browser extension. To test the app, follow the CTA below to install Metamask and create an Eth address for the Ropsten Test Network. For more detailed instructions on how to use/run the project, view source code on GitHub.</p>
+        <a href="https://metamask.io/" class="btn btn-primary btn-lg" style="border-color: grey;">Download Metamask</a><a href="https://github.com/codeamt/EthElection" class="btn btn-primary btn-lg" style="margin-left: 2%; background: black; border-color: grey;">View Source On GitHub</a>
+      </header>
+
+
+      <div class="row">
+        <div class="col-lg-12">
+          <!--<h1 class="text-center">Results Board</h1>-->
+          <!--<hr/>-->
+          <!--<br/>-->
+          <div id="loader">
+            <p class="text-center">Loading...</p>
+          </div>
+          <div id="content" style="display: none;">
+          <div class="row">
+            <div class="jumbotron my-4" style="display: inline-block; width: 69%; float: left; margin-left:1%">
+            <table class="table">
+              <thead>
+                <tr><h4 class="text-center">Results Board</h4></tr>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Candidate Name</th>
+                  <th scope="col">Votes</th>
+                </tr>
+              </thead>
+              <tbody id="candidatesResults">
+              </tbody>
+            </table>
+            </div>
+            <!--<hr/>-->
+            <div class="jumbotron my-4" style="display: inline-block; width: 26%; float:right; margin-right: 1%; margin-left: 3%">
+            <form onSubmit="App.castVote(); return false;">
+              <div class="form-group">
+                <!--<label for="candidatesSelect">Choose Your Candidate:</label></br>-->
+                <h4>Candidates:</h4>
+                <select class="form-control" id="candidatesSelect">
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary">Vote</button>
+              <hr />
+            </form>
+            </div>
+           </div>
+            <p id="accountAddress" class="text-center"></p>
+          </div>
+        </div>
+      </div>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="footer fixed-bottom">
+    <div class="container">
+      <span class="text-muted">© 2018, AnnMargaret Tutu</span>
+    </div>
+  </footer>
+</body>
+
+
+</html>
