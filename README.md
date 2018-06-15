@@ -1,9 +1,9 @@
 <h1 align="center">EthElection</h1>
-<p>This is a simple example decentralized app (dApp) to demonstrate voting via the Ethereum blockchain, powered by [Metamask](https://metamask.io/), [Truffle](http://truffleframework.com/), and [Ginache](http://truffleframework.com/ganache/).</p> 
+<p>This is a simple example decentralized app (dApp) to demonstrate voting via the Ethereum blockchain, powered by:</p> 
 
 <p align="center">
   
-<img src="" width="70%" height="60%" />
+<img src="https://ucarecdn.com/b787bba8-3f2d-47b3-8073-76c830fc023e/" width="40%" height="30%" />
 </p>
 
 ## Demo on Ginache Network 
