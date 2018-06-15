@@ -116,8 +116,8 @@ If you want to see the Result board increment more than once, you'll have to imp
   <img src="https://ucarecdn.com/00e387cd-20b0-4a9f-9aec-bd7c780e81d5/" width="40%" height="50%" />
 </p><br>
 
-After you switch to that accounty, you can cast another vote and see the vote count for your candidate go up again! 
+After you switch to that account, you can cast another vote and see the vote count for your candidate go up again! 
 <br>
 
 ## Future Updates
-In coming weeks, I'll be updating the smart contracts in order to end users from spending (test) money to vote. Stay tuned! 
+In coming weeks, I'll be updating the smart contracts in order to save end users from having to spend money (albeit, fake) to vote. Stay tuned! 
