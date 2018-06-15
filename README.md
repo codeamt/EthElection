@@ -97,7 +97,8 @@ In the terminal:<br>
 cd electionDemo && npm run dev
 ```
 <br>
-Now go to http://localhost:7545 in the browser, and the dapp should be running! You're allowed one vote per address! <br>
+Now go to http://localhost:7545 in the browser, and the dapp should be running! You're allowed one vote per address! 
+<br><br>
 
 <b>7. Import Addresses to Test Vote Incrementing </b> 
 
